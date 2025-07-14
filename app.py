@@ -6,7 +6,7 @@ import base64
 import os
 import google.generativeai as genai
 import streamlit as st
-genai.configure(api_key=st.secrets[AIzaSyCQYZDUws4GzHOqop6-FC7UlMS4jXc3P-U])
+genai.configure(api_key=st.secrets[your-api-key])
 
 
 
