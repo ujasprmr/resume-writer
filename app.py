@@ -4,14 +4,12 @@
 
 import base64
 import os
-from google import genai
-from google.genai import types
+import google.generativeai as genai
+import streamlit as st
+genai.configure(api_key=st.secrets["gemini_api_key])
 
 
-def generate():
-    client = genai.Client(
-        api_key=os.environ.get("YOUR_API_KEY"),
-    )
+
 
     model = "gemini-2.5-pro"
     contents = [
